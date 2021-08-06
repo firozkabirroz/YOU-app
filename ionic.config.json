@@ -1,0 +1,7 @@
+{
+  "name": "Bjoy-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
