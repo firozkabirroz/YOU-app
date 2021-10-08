@@ -1,5 +1,7 @@
 import { createApp } from 'vue'
+//import Vue from "vue";
 import App from './App.vue'
+//import store from "./store";
 import router from './router';
 
 import { IonicVue } from '@ionic/vue';
@@ -22,6 +24,14 @@ import '@ionic/vue/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+//import './theme/core.css'
+
+// Vue.config.productionTip = false;
+
+// new Vue({
+//   store,
+//   render: h => h(App)
+// }).$mount("#app");
 
 const app = createApp(App)
   .use(IonicVue)
