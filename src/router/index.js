@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
+//import { RouteRecordRaw } from 'vue-router';
+
 
 import startingPage from '../views/startingPage.vue'
 import termsAndCondition from '../views/termsAndCondition.vue'
@@ -19,13 +21,14 @@ import userProfileEdit from '../views/userProfileEdit.vue'
 import patientDetails from '../views/patientDetails.vue'
 import homePage1 from '../views/homePage1.vue'
 import menu from '../views/menu.vue'
-
+import hamburger from '../views/hamburger.vue'
+import moneyWithDraw from '../views/moneyWithDraw.vue'
 
 
 const routes = [
   {
     path: '/',
-    redirect: '/logIn'
+    redirect: '/startingPage'
   },
   {
     path: '/startingPage',
@@ -102,7 +105,17 @@ const routes = [
   {
     path: '/menu',
     component: menu
-  }
+  },
+  {
+    path: '/hamburger',
+    component: hamburger
+  },
+  {
+    path: '/moneyWithDraw',
+    component: moneyWithDraw
+  },
+  
+  
 
 
 

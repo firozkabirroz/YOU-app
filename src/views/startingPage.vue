@@ -24,7 +24,7 @@ export default{
   },
 
     created(){
-      setTimeout( () => this.$router.push({ path: '/termsAndCondition'}), 2000);
+      setTimeout( () => this.$router.push({ path: '/termsAndCondition'}), 10000);
 
     }
   }

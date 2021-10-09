@@ -16,7 +16,7 @@
 
         <ion-item>
           <ion-label position="floating">Password</ion-label>
-          <ion-input></ion-input>
+          <ion-input type="password"></ion-input>
         </ion-item>
 
       </div>

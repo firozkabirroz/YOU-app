@@ -7,13 +7,11 @@
         <ion-toolbar>
           
             <ion-title>
+               <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
               <div class="header">
-              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" 
-                  @click="toggledNav = !toggledNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>  
+               
               <span class="headeryou">Home
                 
               </span>
@@ -205,7 +203,7 @@ import {
     IonFooter,
     IonCard,
     IonCardContent,
-    IonButton
+    IonButtons
     
     } from '@ionic/vue';
 import { defineComponent } from 'vue';
@@ -231,7 +229,7 @@ export default defineComponent({
     IonFooter,
     IonCard,
     IonCardContent,
-    IonButton
+    IonButtons
      }
 });
 
@@ -359,6 +357,124 @@ svg{
   
   
 }
+
+</style>
+
+
+<ion-content>
+      <ion-card>
+
+      <ion-card-content>
+        <h1>Support our platfrom</h1>
+
+        <p>
+        Here we are providing the general 
+        people a platform to generate and 
+        donate medical crowdfunding. Where
+        people can feel safe after donation,
+        This platform is focused on the
+        well being of the society and
+        the public health. To run
+        this platform we also
+        need your financial aid.
+        </p>
+
+        <ion-button class="button">Support Now</ion-button>
+      </ion-card-content>
+      </ion-card>
+        <p class="thankyou">
+          Thank you<br>
+          for<br>
+          your support
+        </p>
+    </ion-content>
+
+
+
+    <style scoped>
+  
+  ion-toolbar{
+  --ion-background-color:#FE8A87;
+  color:white;
+  
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .headeryou{
+    
+    display: flex;
+    font-weight:600;
+    color: white;
+    
+  }
+
+  .headerhome{
+    margin-top: 8%;
+    margin-left: 2%;
+  }
+
+/*content*/
+
+ion-card-content{
+  padding-bottom: 15px;
+}
+
+h1{
+  color: black;
+  text-align: center;
+  margin-bottom:15px;
+}
+
+p{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+
+ ion-button{
+   --background:#92EF9C;
+   
+  
+ }
+ .button{
+     margin: 0 auto;
+    display: block;
+ }
+
+  .thankyou{
+    margin-top: 50px;
+  }
+
+
+  ion-footer{
+    width: 120%;
+    margin-left: -8%;
+  }
+
+  .footericon{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+  }
+svg{
+    height: 50px;
+  }
+
+#home{
+  background-color: #ff6d68;
+  padding-left:.35em ;
+  padding-right:.35em ;
+  
+  
+}
+
+
+  
 
 </style>
 

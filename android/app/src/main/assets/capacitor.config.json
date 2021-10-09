@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Bjoy-app",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
